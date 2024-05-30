@@ -1,0 +1,64 @@
+@import '../../styles/mixins';
+
+.navbar{
+    width: 100%;
+    padding: 20px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    @include flex-center(null,space-between);
+    .logo{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 10px;
+
+        img{
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        svg{
+            width: 26px;
+            height: 26px;
+        }
+
+        .notifications{
+            position: relative;
+
+            svg{
+                width: 26px;
+                height: 26px;
+            }
+
+            &-number{
+                height: 16px;
+                width: 16px;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background-color: red;
+                border-radius: 50%;
+                font-size: 12px;
+
+                @include flex-center();
+
+            }
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+    }
+}
