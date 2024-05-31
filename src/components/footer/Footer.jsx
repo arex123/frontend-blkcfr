@@ -2,8 +2,8 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <span>Dashboard</span>
-      <span></span>
+      <span>Footer</span>
+      <span> @copyright free use.</span>
     </div>
   );
 };

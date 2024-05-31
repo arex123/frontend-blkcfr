@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+
+.footer{
+    padding: 30px;
+
+    @include flex-center(center,space-between);
+
+    span{
+        &:first-child{
+            font-weight: bold;
+        }
+
+        &:last-child{
+            font-size: 14px;
+        }
+    }
+}
